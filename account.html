@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>云集团--资金</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/account.css" />
+	</head>
+	<body>
+		<header class="user_header">
+			<div class="head_con">
+				<a class="a_back" href="account.html"></a>
+				<span>个人资料</span>
+				<a class="icon_set" href="securityset.html"></a>
+			</div>
+		</header>
+		<div class="div_blank40"></div>
+		<div class="bordertop">
+			<div class="user-information">
+				<div class="user-portrait"><img src="img/pay_logo.png"></div>
+				<div class="user-infor">
+					<div>夫君55</div>
+					<div>1159636024@qq.com</div>
+					<div>湖南省邵阳市湘乡县隆回街10号</div>
+				</div>
+			</div>
+		    <div class="basicdata">基本资料</div>
+		    <div class="basicdata-min">
+		    	<ul>
+		    		<li><span>昵称</span><span class="min-arrow-right"><a href="inforset.html">夫君55</a></span></li>
+		    		<li><span>Email</span><span class="min-arrow-right"><a href="inforset.html">13750039463@sjyl.com</a></span></li>
+		    		<li><span>真实姓名</span><span class="min-arrow-right"><a href="inforset.html">夫君</a></span></li>
+		    		<li><span>身份证号</span><span class="min-arrow-right"><a href="inforset.html">123456456123</a></span></li>
+		    		<li><span>手机号码</span><span class="min-arrow-right"><a href="setphone.html">123456789</a></span></li>
+		    		<li><span>性别</span><span class="min-arrow-right" onclick="open_model()" id="Gender">女</span></li>
+		    		<li><span>出生日期</span><span class="min-arrow-right"><a href="setbirth.html">1994-11-05</a></span></li>
+		    		<li><span>最高学历</span><span class="min-arrow-right"><a href="inforset.html">高中</a></span></li>
+		    		<li><span>毕业院校</span><span class="min-arrow-right"><a href="inforset.html">夫君55</a></span></li>
+		    		<li><span>户口所在地</span><span class="min-arrow-right"><a href="inforset.html">夫君55</a></span></li>
+		    		<li><span>居住地址</span><span class="min-arrow-right"><a href="inforset.html">夫君55</a></span></li>
+		    	</ul>
+		    </div>
+		</div>
+		<div class="div_model">
+			<div class="Gender_model">
+				<div class="model_sex">
+					<ul>
+						<span class="sex_span1">性别</span>
+						<label for="sex1">
+						<li class="bootn sex_man">
+								<span>男</span>
+								<input id="sex1" type="radio" name="items"  value="男" />
+						</li>
+						</label>
+						<label for="sex2">
+						<li class="sex_woman">
+								<span>女</span>
+								<input id="sex2" type="radio" name="items" checked="checked"  value="女" />
+						</li>
+						</label>
+					</ul>
+				</div>
+			</div>
+		</div>
+ <footer>
+    <ul class="mui-flex">
+        <li class="cell"><a href="usercenter.html"><i class="iconfont iconcn">&#xe64d;</i>个人</a></li>
+        <li class="cell"><a href="funds.html"><i class="iconfont iconcn">&#xe607;</i>资金</a></li>
+        <li class="cell active"><a href="account.html"><i class="iconfont iconcn">&#xe606;</i>账户</a></li>
+        <li class="cell"><a href="share.html"><i class="iconfont iconcn">&#xe654;</i>分享</a></li>
+    </ul>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+<script>
+        function open_model(){
+			$(".div_model").css("display","block");
+		}
+		$(".div_model").click(function(e){
+		    if(!$(e.target).parents(".Gender_model").length){
+		        $(this).hide()
+		    }
+		});
+//		$(".setbtn").click(function(){
+//       	 var item = $('.model_sex input[name="items"]:checked ').val();
+//           $("#women").text(item);//填充内容 
+//           $(".div_model").css("display","none");
+//       });
+		$(".sex_man").click(function(){
+             $("#Gender").text('男');//填充内容 
+             $(".div_model").css("display","none");
+         });
+         $(".sex_woman").click(function(){
+             $("#Gender").text('女');//填充内容 
+             $(".div_model").css("display","none");
+         });
+</script>
+	</body>
+</html>

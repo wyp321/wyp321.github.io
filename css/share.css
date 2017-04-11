@@ -1,0 +1,169 @@
+.pbtm60{
+	padding-bottom: 60px;
+}
+.banner_share{
+	position: relative;
+	width: 100%;
+	height: 12rem;
+	background: url(../img/banner_share.jpg) no-repeat center;
+	background-size: cover;
+}
+.banner_share .rule{
+	position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    width: auto;
+    height: auto;
+    padding-right: 15px;
+    background: url(../img/icon_let.png) no-repeat right center;
+}
+.banner_share .rule:hover{
+	text-decoration: underline;
+}
+.share_people{
+	position: absolute;
+	width: 100px;
+	height: 60px;
+	top: 3rem;
+	text-align: center;
+	left: 50%;
+	margin-left: -50px;
+	color: #0a6ac9;
+}
+.share_people span:first-child{
+	font-size: 42px;
+}
+.people_num{
+	position: absolute;
+	color: #fff;
+	font-size: 18px;
+	bottom: 1rem;
+	left: 50%;
+	margin-left: -54px;
+}
+.share_code{
+	text-align: center;
+}
+.share_code2{
+	padding: 15px 0;
+}
+.share_code .code_text1{
+	color: #999;
+	font-size: 12px;
+}
+.share_code .code_text2{
+	text-align: center;
+	padding: 15px 0;
+}
+.share_code .code_text2 a{
+  width: 100px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #0f71d2;
+  border-radius: 20px;
+  margin: 0 auto;
+  color: #0f71d2;
+  font-weight: 600;
+}
+.code_text3{
+	height: 15px;
+	position: relative;
+	border-bottom: 1px solid #eee;
+}
+.code_text3 span{
+	position: absolute;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	display: inline-block;	
+	background-color: #fff;
+	left: 50%;
+	margin-left: -50px;
+}
+.code_mining{
+	position: relative;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.code_mining ul li{
+	display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.code_mining ul li span{
+	display: block;
+	width: 20%;
+	color: #999;
+	line-height: 26px;
+}
+.code_mining ul li:first-child span{
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 36px;
+	color: #333;
+}
+.code_mining .sodemore{
+	width: 50px;
+	float: right;
+	color: #0f71d2;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 15px;
+}
+
+/*奖励计算方法*/
+.incent{
+	position: absolute;
+	width: 90%;
+	/*top: 10px;*/
+	left: 50%;
+	margin-left: -45%;
+	background-color: #fff;
+	border-radius: 5px;
+	/*padding-bottom: 20px;*/
+	height: 420px;
+top: 50%;
+margin-top: -230px;
+}
+.incent .close_model{
+	position: absolute;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #999;
+	font-size: 3rem;
+	left: 50%;
+	bottom: 10px;
+	margin-left: -25px;
+	background: url(../img/icon_close.png) no-repeat center;
+}
+.det_tit{
+    font-size: 18px;
+    color: #333;
+    position: relative;
+    padding-top: 25px;
+    text-align: center;
+}
+.sh_reward_title {
+    color: #999;
+    font-size: 12px;
+    line-height: 24px;
+    padding-top: 10px;
+}
+.sh_reward_min {
+    padding-left: 15px;
+    color: #999;
+    font-size: 12px;
+    line-height: 24px;
+}
+.sh_reward{
+	padding: 0 15px;
+}

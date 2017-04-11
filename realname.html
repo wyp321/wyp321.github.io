@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>云集团</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/account.css" />
+	</head>
+	<body class="bgbody">
+		<header class="user_header">
+			<div class="head_con">
+				<a class="a_back" href="account.html"></a>
+				<span>实名认证</span>
+			</div>
+		</header>
+		<div class="div_blank40"></div>
+		<div class="bordertop">
+			<div class="set-min2">
+				<ul>
+					<li>
+						<span>昵称(不可更改)</span><span>夫君55</span>
+					</li>
+					<li>
+						<span>身份证号码</span><span>25645856645</span>
+					</li>
+					<li>
+						<span>性别</span><span>女</span>
+					</li>
+					<li>
+						<span>手持身份证正面照</span>
+						<a class="min-black-right">
+							请选择
+							<input type="file" autocomplete="off"  onchange="preView(this)">
+						</a>
+					</li>
+					<li>
+						<span>本人身份证正面照</span>
+						<a class="min-black-right">
+							请选择
+							<input type="file" autocomplete="off"  onchange="preView2(this)">
+						</a>
+					</li>
+					<li>
+						<span>本人身份证反面照</span>
+						<a class="min-black-right">
+							请选择
+							<input type="file" autocomplete="off"  onchange="preView3(this)">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="set-poto">
+				<ul>
+					<li>
+						<a href=""></a>
+						<img src="img/funds_bg.jpg" alt="这里预览图片" id="js_preview">
+					</li>
+					<li>
+						<img src="img/funds_bg.jpg" id="js_preview2">
+					</li>
+					<li>
+						<img src="img/funds_bg.jpg" id="js_preview3">
+					</li>
+				</ul>
+			</div>
+			<div class="setout2">
+				<a href="">保存</a>
+			</div>
+       </div>
+       <script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+       <script type="text/javascript" src="js/fs_forse.js" ></script>
+        <script type="text/javascript">
+//function preView(e){
+//	console.warn(e);
+//	var f = e.files[0];
+//	var FR = new FileReader();
+//	FR.readAsDataURL(f);
+//	FR.onload = function(f){
+//		
+//		var canvas = document.createElement('canvas');
+//		var img = new Image();
+//			img.src = this.result;
+//			img.onload = function(){ 
+//				var ctx = canvas.getContext("2d"); 
+//				ctx.clearRect(0, 0, canvas.width, canvas.height);
+//				canvas.width = img.width;
+//				canvas.height = img.height;
+//				ctx.drawImage(img, 0, 0, img.width, img.height);
+//				var src = canvas.toDataURL("image/jpeg");
+//				document.getElementById("js_preview").setAttribute("src",src);
+//			};
+//	};
+//}
+
+</script>
+	</body>
+</html>

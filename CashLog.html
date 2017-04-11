@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/cash.css" />
+    <title>资金日志</title>
+</head>
+<body>
+	<header class="user_header">
+			<div class="head_con">
+				<a class="a_back" href="funds.html"></a>
+				<span>资金</span>
+			</div>
+	</header>
+	<div class="div_blank40"></div>
+<section>
+    <div class="item">
+        <div class="item1">
+            <h2>可用余额，其中不可用余额0.00元</h2>
+            <p class="f20 red">￥<span>120.00</span>元</p>
+        </div>
+
+        <div class="item2">
+            <h2>账户总额 <small>(奖励金额可用于投资，不可提现)</small></h2>
+            <ul class="mui-flex">
+                <li class="cell">
+                    <h3>冻结资金</h3>
+                    <span>￥ 0.00</span>
+                </li>
+                <li class="cell">
+                    <h3>账户余额</h3>
+                    <span>￥ 0.00</span>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <!--<ul class="mui-flex handle-box container">
+        <li class="cell"><a href="" class="btn-red">充值</a></li>
+        <li class="cell"><a class="btn-blue" href="">提现</a></li>
+    </ul>-->
+
+    <div>
+    	<div class="cash">
+	       <ul class="mui-flex">
+	           <li class="cell"><span class="on">资金日志</span></li>
+	           <li class="cell"><span>冻结资金日志</span></li>
+	           <li class="cell"><span class="screen">筛选+</span></li>
+	       </ul>
+	    </div>
+	  
+	    <div class="cash-min">
+	    	<div class="capital">
+	    		<ul>
+	    			<li>
+	    				<div class="Fundlog">
+	    					<div class="fundlog-day">三天以内</div>
+		    				<div class="tit"><span>2016-10-15  10:24:36 </span><span>操作类型：充值</span></div>
+		    				<div class="tit2"><span>操作金额：0.00</span><span>结 余：120.00</span><span>备 注：在线充值</span></div>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="Fundlog">
+	    					<div class="fundlog-day">三天以内</div>
+		    				<div class="tit"><span>2016-10-15  10:24:36 </span><span>操作类型：充值</span></div>
+		    				<div class="tit2"><span>操作金额：0.00</span><span>结 余：120.00</span><span>备 注：在线充值</span></div>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="Fundlog">
+	    					<div class="fundlog-day">三天以内</div>
+		    				<div class="tit"><span>2016-10-15  10:24:36 </span><span>操作类型：充值</span></div>
+		    				<div class="tit2"><span>操作金额：0.00</span><span>结 余：120.00</span><span>备 注：在线充值</span></div>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<div class="Fundlog">
+	    					<div class="fundlog-day">三天以内</div>
+		    				<div class="tit"><span>2016-10-15  10:24:36 </span><span>操作类型：充值</span></div>
+		    				<div class="tit2"><span>操作金额：0.00</span><span>结 余：120.00</span><span>备 注：在线充值</span></div>
+	    				</div>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    </div>
+	      <div class="screen-model">
+	      	<div class="div-screen">
+	      		<ul>
+	    		<li>结存</li>
+	    		<li>投标成功</li>
+	    		<li>结存</li>
+	    		<li>投标成功</li>
+	    		<li>结存</li>
+	    		<li>投标成功</li>
+	    		<li>结存</li>
+	    		<li>投标成功</li>
+	    		<li>结存</li>
+	    		<li>投标成功</li>
+	    		<li>结存</li>
+	    		<li>投标成功</li>
+	    		<li>结存</li>
+	    		<li>投标成功</li>
+	    	</ul>
+	      </div>
+	    </div>
+    </div>
+</section>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+<script>
+	$(".screen").click(function(){
+		$(".screen-model").css("display","block");
+	});
+	$(".screen-model").click(function(){
+		$(".screen-model").css("display","none");
+	});
+</script>
+</body>
+</html>

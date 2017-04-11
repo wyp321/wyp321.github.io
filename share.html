@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>云集团</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/share.css" />
+	</head>
+	<body>
+		<header class="user_header">
+			<div class="head_con">
+				<a class="a_back" href="funds.html"></a>
+				<span>分享</span>
+			</div>
+		</header>
+		<div class="div_blank40"></div>
+		<div class="bordertop pbtm60">
+			<div class="banner_share">
+				<a class="rule" onclick="open_model()">奖励规则</a>
+				<div class="share_people"><span>40</span><span>人</span></div>
+				<div class="people_num">分享好友总数</div>
+			</div>
+			<div class="share_code">
+				<div class="share_code2">
+					<img src="img/icon_code.jpg" />
+				</div>
+				<div class="code_text1">扫描二维码分享给好友一起拿分红权</div>
+				<div class="code_text2"><a>分享好友</a></div>
+				<div class="code_text3"><span>分享记录</span></div>
+				<div class="code_mining">
+					<ul>
+						<li><span>昵称</span><span>注册时间</span><span>电话</span><span>分红权</span></li>
+						<li><span>hhhn</span><span>2016-12-01</span><span> 137*****462 </span><span>0</span></li>
+						<li><span>hhhn</span><span>2016-12-01</span><span> 137*****462 </span><span>0</span></li>
+						<li><span>hhhn</span><span>2016-12-01</span><span> 137*****462 </span><span>0</span></li>
+						<li><span>hhhn</span><span>2016-12-01</span><span> 137*****462 </span><span>0</span></li>
+						<li><span>hhhn</span><span>2016-12-01</span><span> 137*****462 </span><span>0</span></li>
+					</ul>
+					<a class="sodemore" href="recorddetails.html">更多>></a>
+				</div>
+			</div>
+		</div>		
+<footer>
+    <ul class="mui-flex">
+        <li class="cell"><a href="usercenter.html"><i class="iconfont iconcn">&#xe64d;</i>个人</a></li>
+        <li class="cell"><a href="funds.html"><i class="iconfont iconcn">&#xe607;</i>资金</a></li>
+        <li class="cell"><a href="account.html"><i class="iconfont iconcn">&#xe606;</i>账户</a></li>
+        <li class="cell active"><a href="share.html"><i class="iconfont iconcn">&#xe654;</i>分享</a></li>
+    </ul>
+</footer>
+
+       <div class="div_model">
+			<div class="incent">
+				<div class="det_tit">奖励计算方法</div>
+				<div class="sh_reward">
+	            <div class="sh_reward_title">1、奖励规则</div>
+	            <div class="sh_reward_min">
+	                    <p>a. 当月推荐奖励 = 有效推荐好友当月实收利息 * 奖励比例；</p>
+	                    <p>b. 有效推荐好友要同时满足以下条件;</p>
+	                    <p>c. 当月实收利息大于0；</p>
+	                    <p> d. 终身持续奖励.</p>
+	            </div> 
+	            <div class="sh_reward_title">2、奖励比例</div>
+	            <div class="sh_reward_min">
+	                    <p>推荐有效好友，以注册时间为顺序，有效推荐奖励比例均为%。</p>                     
+	            </div>
+	            <div class="sh_reward_title">3、奖励发放时间</div>
+	            <div class="sh_reward_min">
+	                    <p>每个月1号对上月推荐奖励进行结算，结算后自动充入账户可用余额；</p>                      
+	            </div>
+	            </div>
+	            <div class="close_model"></div>
+			</div>
+		</div>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+<script>
+	  function open_model(){
+			$(".div_model").css("display","block");
+		}
+		$(".div_model").click(function(e){
+		    if(!$(e.target).parents(".incent").length){
+		        $(this).hide()
+		    }
+		});
+		$(".close_model").click(function(){
+			$(".div_model").css("display","none");
+		});
+</script>
+	</body>
+</html>

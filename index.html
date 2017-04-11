@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>欢迎</title>
+    <link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" href="css/index.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+</head>
+<body>
+<div class="music mzhuan" id="music">
+    	 <audio id="mp3Btn" autoplay loop>
+        <source src="css/zhang-notafraid.mp3" type="audio/mpeg" />
+        </audio>
+</div>
+<div id="fullpage">
+	<div class="section w-bg1" id="section0">
+		<div class="login-logo"><img src="img/w_logo.png"></div>
+        <div class="slide-text1">云集团</div>
+        <div class="slide-text2"> 云集团旗下“三巨头”。投资理财有世界云联 提升学习去一诺学苑；生活购物找环球云购。</div>
+        <div class="slide-text3"> 我们虽然年轻，但是我们志存高远，中国梦的实现是我们的追求，促进经济的腾飞是我们的目标借着互联网变革的东风，我们愿一步一脚</div>
+        <div class="w-top"></div>
+	</div>
+	<div class="section w-bg2" id="section1">
+		<div class="slide-min">
+            		<div class="slide-text">
+            			<div class="bg-logo1" id="logo1"></div>
+	            		<div class="slide2-text1" id="text1">创新互联网大数据平台</div>
+	            		<div class="slide2-text2" id="text2">P2P</div>
+	            		<div class="slide2-text3" id="text3">帮助投资者进入高保障</div>
+            		</div>
+            	<div class="login-btn" id="btn1">
+            		<a class="w-sign" href="login.html">登录</a>
+            		<a class="w-register" href="regist.html">注册</a>
+            	</div>
+        </div>
+        <div class="w-top"></div>
+	</div>
+	<div class="section w-bg3" id="section2">
+		<div class="slide-min">
+            		<div class="slide-text">
+            			<div class="bg-logo1" id="logo2"></div>
+	            		<div class="slide2-text1" id="text4">创新互联网大数据平台</div>
+	            		<div class="slide2-text2" id="text5">P2P</div>
+	            		<div class="slide2-text3" id="text6">帮助投资者进入高保障</div>
+            		</div>
+            	<div class="login-btn" id="btn2">
+            		<a class="w-sign" href="login.html">登录</a>
+            		<a class="w-register" href="regist.html">注册</a>
+            	</div>
+        </div>
+        <div class="w-top"></div>
+	</div>
+	<div class="section w-bg4" id="section3">
+		<div class="slide-min">
+            		<div class="slide-text">
+            			<div class="bg-logo1" id="logo3"></div>
+	            		<div class="slide2-text1" id="text7">创新互联网大数据平台</div>
+	            		<div class="slide2-text2" id="text8">P2P</div>
+	            		<div class="slide2-text3" id="text9">帮助投资者进入高保障</div>
+            		</div>
+            	<div class="login-btn" id="btn3">
+            		<a class="w-sign" href="login.html">登录</a>
+            		<a class="w-register" href="regist.html">注册</a>
+            	</div>
+        </div>
+	</div>
+    
+</div>
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.easings.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js" ></script>
+	<script type="text/javascript">
+	  //播放器控制
+    var audio = document.getElementById('mp3Btn');
+    $('.music').click(function(){
+        //防止冒泡
+        event.stopPropagation();
+        if(audio.paused) //如果当前是暂停状态
+
+        {
+        	$(this).addClass("mzhuan");
+            audio.play();//播放
+            return;
+        }
+        else{
+        	 //当前是播放状态
+        audio.pause(); //暂停
+        $(this).removeClass("mzhuan");
+        }
+       
+    });
+	
+	
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+				afterLoad: function(anchorLink, index){
+
+					//section 2
+					if(index == 2){
+						$("#text1").addClass("leftIn");
+						$("#text2").addClass("toplag");
+						$("#text3").addClass("rightIn");
+						$("#btn1").addClass("btndisply");
+						$("#logo1").addClass("xuanzhuan");
+					}
+                    if(index == 3){
+						$("#text4").addClass("leftIn");
+						$("#text5").addClass("toplag");
+						$("#text6").addClass("rightIn");
+						$("#btn2").addClass("btndisply");
+						$("#logo2").addClass("xuanzhuan");
+					}
+					if(index == 4){
+						$("#text7").addClass("leftIn");
+						$("#text8").addClass("toplag");
+						$("#text9").addClass("rightIn");
+						$("#btn3").addClass("btndisply");
+						$("#logo3").addClass("xuanzhuan");
+					}
+				}
+			});
+
+		});
+	</script>
+</body>
+</html>

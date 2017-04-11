@@ -1,0 +1,324 @@
+.user-information{
+	padding: 15px 10px;
+	display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+.user-portrait{
+	width: 5rem;
+	height: 5rem;
+	text-align: center;
+	line-height: 5rem;
+	border-radius: 50%;
+	border: 1px solid #0698ff;
+	display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+.user-portrait img{
+	max-width: 5rem;
+	max-height: 5rem;
+}
+.user-infor{
+	position: relative;
+    flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-left: 1rem;
+}
+.basicdata{
+	background-color: #f0f0f0;
+	line-height: 2rem;
+	padding-left: 15px;
+}
+.basicdata-min{
+	padding: 10px 15px 60px 15px;
+}
+.basicdata-min ul li{
+	border-bottom: 1px solid #eee;
+	font-size: 1.2rem;
+	height: 3rem;
+	line-height: 3rem;
+	color: #262626;
+	display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.basicdata-min ul li a{
+	color: #262626;
+}
+
+
+/*安全设置*/
+.setname{
+	display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+	padding: 15px 15px;
+	color: #262626;
+	background-color: #fff;
+}
+.set-min{
+	padding: 0 15px;
+	margin-top: 10px;
+	color: #262626;
+	background-color: #fff;	
+}
+.set-min ul li{
+	border-bottom: 1px solid #eee;
+	font-size: 1.2rem;
+	height: 3rem;
+	line-height: 3rem;
+	color: #262626;
+	display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.set-min ul li a{
+	color: #262626;
+}
+.setout{
+	margin-top: 15px;
+	text-align: center;
+}
+.setout a{
+	display: block;
+    border: none;
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #0083ce;
+    margin: auto;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #f8f8f6;
+}
+/*实名认证*/
+.set-min2{
+	color: #262626;
+	background-color: #fff;	
+}
+.set-min2 ul li{
+	padding: 0 15px;
+	border-bottom: 1px solid #eee;
+	font-size: 1.2rem;
+	height: 3rem;
+	line-height: 3rem;
+	color: #262626;
+	display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.setout2{
+	margin-top: 15px;
+	text-align: center;
+}
+.setout2 a{
+	display: block;
+    border: none;
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #0083ce;
+    margin: auto;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #f8f8f6;
+}
+.min-arrow-right{
+	padding-right: 20px;
+	background: url(../img/icon_arrow_right.png) no-repeat right center;
+}
+.min-black-right{
+	position: relative;
+	width: 60px;
+	text-align: center;
+	padding-right: 15px;
+	color: #999;
+	background: url(../img/icon_arrow_right.png) no-repeat right center;
+}
+.min-black-right input{
+	position: absolute;
+	width: 75px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.set-poto{
+	margin-top: 10px;
+	background-color: #fff;
+	padding: 15px;
+	overflow: hidden;
+}
+.set-poto ul{
+	overflow: hidden;
+}
+.set-poto ul li{
+	float: left;
+	padding-right: 10px;
+	width: 30%;
+	max-height: 5rem;
+}
+.set-poto ul li img{
+	width: 100%;
+}
+.icon_set{
+	position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon_setting.png) no-repeat center;
+    right: 15px;
+    top: 10px;
+}
+
+/*弹出框*/
+.Gender_model{
+	position: absolute;
+    width: 50%;
+    height: 11rem;
+    background-color: #fff;
+    border-radius: 5px;
+    left: 50%;
+    margin-left: -25%;
+    top: 50%;
+    margin-top: -25%;
+    z-index: 55;
+}
+.model_sex{
+	margin-top: 10px;
+}
+.model_sex .sex_span1{
+	padding-left: 10px;
+}
+.model_sex ul li{
+	text-align: center;
+	padding: 5px 15px;
+	    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.model_sex .bootn{
+	border-bottom: 1px solid #eee;
+}
+.model_sex ul li input{
+	position: relative;
+	top: 5px;
+	height: 20px;
+	line-height: 20px;
+}
+.model_sex ul li span{
+	height: 35px;
+	line-height: 35px;
+	position: relative;
+}
+.setbtn{
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+	width: 50px;
+	height: 2rem;
+	line-height: 2rem;
+	background-color: #0083ce;
+	color: #fff;
+	text-align: center;
+	font-size: 1rem;
+	border-radius: 5px;
+	padding: 0px !important;
+}
+.Gender_model2{
+	position: absolute;
+    width: 50%;
+    height: 10rem;
+    background-color: #fff;
+    border-radius: 5px;
+    left: 50%;
+    margin-left: -25%;
+    top: 50%;
+    margin-top: -25%;
+}
+
+/*登录密码设置*/
+.set_password{
+	margin-top: 10px;
+    background-color: #fff;
+}
+.set_password .set1{
+	border-bottom: 1px solid #eee;
+    padding: 0 15px;
+}
+.set_password .set1 input{
+	width: 83%;
+}
+.setpassdbtn{
+	margin-top: 10px;
+    text-align: center;
+}
+.setpassdbtn input{
+	width: 90%;
+    background-color: #0083ce;
+    color: #fff;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+/*绑定手机*/
+.set_password .set2{
+	position: relative;
+	border-bottom: 1px solid #eee;
+    padding: 0 15px;
+        height: 40px;
+    line-height: 40px;
+}
+.set_password .set2_min input{
+	width: 65%;
+}
+.set_password .set2 span{
+	width: 28%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	background-color: #0083ce;
+	border-radius: 5px;
+	color: #fff;
+	float: right;
+	margin-top: 5px;
+}
+.set2_min{
+	width: 70%;
+	float: left;
+}

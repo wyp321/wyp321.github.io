@@ -1,0 +1,95 @@
+.cash .mui-flex {
+  padding: 10px 15px 0px;
+  margin-top: 10px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+   }
+.cash .mui-flex a{
+	 color: #2b2a2a;
+}
+.item1 {
+  margin-bottom: 10px; }
+.cash .cell{
+	line-height: 40px;
+}
+section .item2 {
+  padding-top: 0px; 
+  }
+  section .item2 h2 {
+    padding: 10px; 
+    }
+.cash li span{
+	display: inline-block;
+}
+.cash li:last-child span{
+	float: right;
+    width: 50px;
+    text-align: right;
+}
+
+.cash li:nth-child(2) {
+	text-align: center;
+}
+.cash .cell span.on{
+	color: #0898fc;
+  border-bottom: 2px solid #0898fc;
+}
+.cash-min{
+	background-color: #fff;
+	font-size: 13px;
+	color: #2b2a2a;
+}
+.capital ul li{
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+}
+.Fundlog{
+	padding: 0 15px;
+}
+.fundlog-day{
+	font-size: 14px;
+	line-height: 30px;
+}
+.Fundlog .tit{
+	   display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    line-height: 24px;
+}
+.Fundlog .tit2{
+	   display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #a0a0a0;
+}
+.screen-model{
+	position: absolute;
+	width: 100%;
+	min-height: 360px;
+	z-index: 20;
+	margin-top: -360px;
+	background-color: #fff;
+	display: none;
+}
+.div-screen{
+	width: 96%;
+	padding-top: 10px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.div-screen ul li{
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+	line-height: 24px;
+}

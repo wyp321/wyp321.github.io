@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>云集团--充值明细</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/recharge_details.css" />
+		
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+	</head>
+	<body>
+		<header class="user_header">
+			<div class="div_blank40">
+				<a class="a_back" href="funds.html"></a>
+				<span>资金</span>
+				<a class="a_font" onclick="open_model()">筛选</a>
+			</div>
+		</header>
+		<div class="div_blank40"></div>
+		<div class="re_det">
+			<div class="det_list">
+				<div class="list_left">
+					<span>应用金额：0.01</span>
+					<p>付款方式：畅捷支付</p>
+					<p>支付单号：20161125170701822</p>
+					<p>下单时间：2016-11-25 01:25:22</p>
+					<p>付款时间：2016-11-25 13:27:21</p>
+					<p>付款单备注：充值了5块钱</p>
+				</div>
+				<div class="list_right">
+					<img src="img/pay_status.png"/>
+					<p>已支付</p>
+				</div>
+			</div>
+			<div class="det_list">
+				<div class="list_left">
+					<span>应用金额：0.01</span>
+					<p>付款方式：畅捷支付</p>
+					<p>支付单号：20161125170701822</p>
+					<p>下单时间：2016-11-25 01:25:22</p>
+					<p>付款时间：2016-11-25 13:27:21</p>
+					<p>付款单备注：充值了5块钱</p>
+				</div>
+				<div class="list_right">
+					<img src="img/pay_status1.png"/>
+					<p>未支付</p>
+				</div>
+			</div>
+		</div>
+		<div class="div_model">
+			<div class="model_con">
+				<a class="a_payed">已支付</a>
+				<a class="a_nopay">未支付</a>
+			</div>
+		</div>
+		
+	</body>
+	<script>
+		function open_model(){
+			$(".div_model").css("display","block");
+		}
+		$(".div_model").click(function(e){
+		    if(!$(e.target).parents(".model_con").length){
+		        $(this).hide()
+		    }
+		});
+	</script>
+</html>

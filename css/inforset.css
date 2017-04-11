@@ -1,0 +1,6 @@
+.setfor{
+	margin-top: 10px;
+	background-color: #fff;
+	padding: 10px 15px;
+}
+.setfor input[type="date"]{border: 1px solid #fff; width: 100%;font-size: 14px;}
